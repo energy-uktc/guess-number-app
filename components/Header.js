@@ -7,7 +7,6 @@ import DefaultStyle from "../constants/defaultStyles";
 const Header = props => {
   const [screenSize, setScreenSize] = useState(screenMeasures());
   const updateOrientation = () => {
-    //setScreenSize(screenMeasures());
     setScreenSize(prevScreenSize => {
       const currScreenSize = screenMeasures();
       return {
