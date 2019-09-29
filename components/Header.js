@@ -16,6 +16,7 @@ const Header = props => {
       };
     });
   };
+
   useEffect(() => {
     Dimensions.addEventListener("change", updateOrientation);
     return () => {
@@ -43,14 +44,12 @@ const Header = props => {
 const styles = StyleSheet.create({
   header: {
     width: "100%",
-    //height: screen.short ? 70 : 90,
-    //paddingTop: 36 * screen.heightFactor,
     backgroundColor: Colors.primary,
     alignItems: "center",
     justifyContent: "center"
   },
   headerTitle: {
-    color: "white", // "black",
+    color: "white", // "black ",
     fontSize: 18,
     fontWeight: "bold"
   }
